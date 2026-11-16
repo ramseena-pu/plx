@@ -1,0 +1,49 @@
+#api call to get data
+###
+GET http://127.0.0.1:8000/vehicle/
+Accept: application/json
+
+#api call to create data
+###
+POST http://127.0.0.1:8000/vehicle/
+Content-Type: application/json
+
+{
+    "name":"Alto",
+    "number":"kl-08-4673",
+    "fuel_type":"petrol",
+    "owner_type":"second",
+    "running_km":-356667,
+    "accident_history":false,
+    "price":49075,
+    "year":2020,
+    "phone": 9576843920
+}
+
+#api call to retrieve a data
+###
+GET http://127.0.0.1:8000/vehicle/2/
+Accept: application/json
+
+#api call to update a data
+###
+PUT http://127.0.0.1:8000/vehicle/2/
+Content-Type: application/json
+
+{
+    "name":"Alto",
+    "number":"kl-08-4673",
+    "fuel_type":"petrol",
+    "owner_type":"second",
+    "running_km":356667,
+    "accident_history":false,
+    "price":50000,
+    "year":2020,
+    "phone": 9576843920
+}
+
+#api call to delete a record
+###
+DELETE http://127.0.0.1:8000/vehicle/3/
+Content-Type: application/json
+
